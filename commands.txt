@@ -1,0 +1,9 @@
+docker container run -d nginx
+docker images history nginx-image -> to see whats ports are EXPOSED
+docker container ls
+docker images or docker images ls
+docker container inspect nginx | grep IPAdd -> to see what IP use this container
+docker container run -d -P nginx -> igual que la p minuscula, pero te asigna un puerto al azar, efimero, que va despeus del 32
+docker container run -d -p 80:80 nginx -> para matchear el puerto del container con el puerto de nuestro servidor
+docker container run nginx -> Esta es la tercer forma, y si no aclaramos ningun puerto, solo se expone el puerto de la imagen, si es nginx, el 80, pero del lado del container
+
